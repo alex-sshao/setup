@@ -53,6 +53,11 @@ set statusline+=%#warningmsg#
 set statusline+=%*
 
 
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 0
+
+
 " fzf
 nnoremap <C-n> :Files<CR>
 nnoremap <C-f> :Rg<CR>
@@ -69,15 +74,25 @@ nnoremap <C-w><C-w> :w<CR>
 nnoremap <C-w>q :q!<CR>
 nnoremap <C-w><C-q> :q!<CR>
 
-tnoremap <C-w>q <C-w>N:q!<CR>
+tnoremap <C-w>q <C-w>:q!<CR>
 tnoremap <C-w><C-q> <C-w>N:q!<CR>
 tnoremap <C-w><C-n> <C-w>N<CR>
 tnoremap <C-w><C-N> <C-w>N<CR>
 
 nnoremap <C-a>h :tabprevious<CR>
 nnoremap <C-a>l :tabnext<CR>
+nnoremap <C-a><C-h> :tabprevious<CR>
+nnoremap <C-a><C-l> :tabnext<CR>
 nnoremap <C-a>n :tabnew<CR>
 nnoremap <C-a>x :x<CR>
+
+tnoremap <C-a>h <C-w>:tabprevious<CR>
+tnoremap <C-a>l <C-w>:tabnext<CR>
+tnoremap <C-a><C-h> <C-w>:tabprevious<CR>
+tnoremap <C-a><C-l> <C-w>:tabnext<CR>
+tnoremap <C-a>n <C-w>:tabnew<CR>
+tnoremap <C-a>x <C-w>:x<CR>
+tnoremap <C-a>q <C-w>:q!<CR>
 
 " sigstp block
 nnoremap <c-z> <nop>
