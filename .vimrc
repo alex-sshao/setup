@@ -39,7 +39,7 @@ let g:ale_completion_delay = 100
 let g:ale_completion_autoimport = 1
 
 let g:ale_linters = {
-\ 'c': ['clangd'],
+\ 'c': ['clang'],
 \ 'c++': ['clangd'],
 \ }
 
