@@ -14,8 +14,8 @@ link(){
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp -r .vim ~
 
-link ".vimrc" ~/.vimrc
-link ".zshrc" ~/.zshrc
+link .vimrc ~/.vimrc
+link .zshrc ~/.zshrc
 
 git clone https://github.com/powerline/fonts.git --depth=1
 ./fonts/install.sh
